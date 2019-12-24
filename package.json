@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/KaizenProgrammer/party-olympics#readme",
   "dependencies": {
-    "lit-element": "^2.2.1"
+    "lit-element": "^2.2.1",
+    "readable-url": "^1.0.9"
   },
   "devDependencies": {
     "@types/chai": "^4.2.5",
