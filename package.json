@@ -1,0 +1,52 @@
+{
+  "name": "party-olympics",
+  "version": "1.0.0",
+  "description": "Application for creation and management of party games in an olympic styled tournament.",
+  "main": "app.ts",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "test:watch": "mocha -r ts-node/register tesst/**/*.test.ts --watch-extensions ts --watch",
+    "commit": "git add -A; timestamp=$(date \"+%c\") && git commit -m \"TCR @ $timestamp\";",
+    "revert": "git reset --hard",
+    "tcr": "npm test && npm run commit || npm run revert",
+    "start": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaizenProgrammer/party-olympics.git"
+  },
+  "author": "KaizenProgrammers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaizenProgrammer/party-olympics/issues"
+  },
+  "homepage": "https://github.com/KaizenProgrammer/party-olympics#readme",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.12",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "chai": "^4.2.0",
+    "es-dev-server": "^1.26.2",
+    "eslint": "^6.7.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.2",
+    "svg-inline-loader": "^0.8.0",
+    "tslint": "^5.20.1",
+    "tslint-webpack-plugin": "^2.1.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
