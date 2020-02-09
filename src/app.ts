@@ -15,34 +15,36 @@ export class PartyOlympics extends LitElement {
             });
         });
 
+        let minimumPlayersPerTeam=4;
         this.olympicsEngine.addGame({
             id:'ping-pong',
             name:'Ping Pong',
-            minimumPlayersPerTeam:4
+            minimumPlayersPerTeam:minimumPlayersPerTeam
         });
         this.olympicsEngine.addGame({
             id:'cornhole',
             name:'Cornhole',
-            minimumPlayersPerTeam:4
+            minimumPlayersPerTeam:minimumPlayersPerTeam
         });
         this.olympicsEngine.addGame({
-            id:'Mario Kart',
+            id:'mario-kart',
             name:'Mario Kart',
-            minimumPlayersPerTeam:4
+            minimumPlayersPerTeam:minimumPlayersPerTeam
         });
         
         this.olympicsEngine.addGame({
             id:'bowling',
             name:'Bowling',
-            minimumPlayersPerTeam:4
+            minimumPlayersPerTeam:minimumPlayersPerTeam
         });
         
         this.olympicsEngine.addGame({
             id:'cornhole',
             name:'Cornhole',
-            minimumPlayersPerTeam:4
+            minimumPlayersPerTeam:minimumPlayersPerTeam
         });
         this.olympicsEngine.randomizeTeams();
+        this.olympicsEngine.buildBrackets();
 
     }
     static get styles() {
